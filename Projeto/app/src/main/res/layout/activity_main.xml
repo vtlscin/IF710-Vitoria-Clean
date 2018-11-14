@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button3"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="229dp"
+        android:layout_height="51dp"
+        android:background="@drawable/botaoarredondado"
+        android:text="ENTRAR"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoarredondado"
+        android:text="CADASTRAR"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="381dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="254dp"
+        android:layout_height="187dp"
+        android:src="@drawable/Logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+</android.support.constraint.ConstraintLayout>
