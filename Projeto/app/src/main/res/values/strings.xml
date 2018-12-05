@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Vitoria Clean</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="endereço">Endereço</string>
+    <string name="concluir">CONCLUIR</string>
+    <string name="senha">Senha</string>
+    <string name="avançar">AVANÇAR</string>
+    <string name="imagem">Imagem</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="login">LOGIN</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
 </resources>

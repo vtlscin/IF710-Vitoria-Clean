@@ -4,35 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FFF">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/entrar"
         style="@android:style/Widget.Material.Light.Button.Small"
         android:layout_width="229dp"
         android:layout_height="51dp"
         android:background="@drawable/botaoarredondado"
-        android:text="ENTRAR"
+        android:textColor="#000000"
+        android:text="@string/entrar"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="287dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/cadastrar"
         style="@android:style/Widget.Material.Light.Button.Small"
         android:layout_width="229dp"
         android:layout_height="wrap_content"
         android:background="@drawable/botaoarredondado"
-        android:text="CADASTRAR"
+        android:textColor="#000000"
+        android:text="@string/cadastrar"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="381dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="381dp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="254dp"
         android:layout_height="187dp"
-        android:src="@drawable/Logo"
+        android:background="@mipmap/ic_launcher_foreground"
+        android:contentDescription="@string/imagem"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="52dp" />

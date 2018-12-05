@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="211dp"
+        android:layout_height="147dp"
+        android:background="@mipmap/ic_launcher_foreground"
+        android:contentDescription="@string/imagem"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="55dp"
+        android:layout_height="18dp"
+        android:textColor="#000000"
+        android:text="@string/email"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="55dp"
+        android:layout_height="18dp"
+        android:textColor="#000000"
+        android:text="@string/senha"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="55dp"
+        android:layout_height="18dp"
+        android:textColor="#000000"
+        android:text="@string/nome"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColor="#000000"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:ignore="LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColor="#000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="189dp"
+        tools:ignore="LabelFor,MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColor="#000000"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="366dp"
+        tools:ignore="LabelFor,MissingConstraints"/>
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoarredondado"
+        android:textColor="#000000"
+        android:text="@string/avançar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+</android.support.constraint.ConstraintLayout>

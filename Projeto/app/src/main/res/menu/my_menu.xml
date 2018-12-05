@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/car"
+        android:icon="@drawable/ic_carrinho"
+        android:title="Carrinho" />
+    <item
+        android:id="@+id/dados"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Alterar Dados" />
+    <item
+        android:id="@+id/compras"
+        android:icon="@drawable/ic_archive_black_24dp"
+        android:title="Minhas Compras" />
+    <item
+        android:id="@+id/sobre"
+        android:title="Sobre" />
+    <item
+        android:id="@+id/sair"
+        android:title="Sair" />
+</menu>
