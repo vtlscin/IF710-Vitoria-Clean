@@ -1,24 +1,40 @@
 package com.example.wilkinsonmaciel.animport
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_main2.*
-import kotlinx.android.synthetic.main.app_bar_main2.*
-import kotlinx.android.synthetic.main.content_main2.*
+import kotlinx.android.synthetic.main.activity_lista_automotivos.*
+import kotlinx.android.synthetic.main.app_bar_lista_automotivos.*
+import kotlinx.android.synthetic.main.content_lista_automotivos.*
 
-class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
+    val itemList: MutableList<item_automotivo> = mutableListOf(
+            item_automotivo("Adérito Tibiriçá", "atibirica@email.com", "1111-1111"),
+            item_automotivo("Cleiton Siqueira ", "csiqueira@email.com", "2222-2222"),
+            item_automotivo("Carlos Proença", "cproenca@email.com", "3333-3333"),
+            item_automotivo("Filipe Valadão", "fvaladao@email.om", "4444-4444"),
+            item_automotivo("Flávio Noite", "fnoite@email.com", "5555-5555")
+    )
+
+    lateinit var item_automotivoAdapter: item_automotivoAdapter
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_lista_automotivos)
         setSupportActionBar(toolbar)
+
+        fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show()
+        }
 
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -27,12 +43,13 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         nav_view.setNavigationItemSelectedListener(this)
 
-        automotivo.setOnClickListener{
-            startActivity( Intent( this ,lista_automotivos::class.java) )
-        }
-        residencial.setOnClickListener{
-            startActivity( Intent( this ,lista_residencial::class.java) )
-        }
+        item_automotivoAdapter = item_automotivoAdapter(this, itemList)
+        recyclerView.adapter = item_automotivoAdapter
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.smoothScrollToPosition(itemList.size)
+
+
+
     }
 
     override fun onBackPressed() {
@@ -45,7 +62,8 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main2, menu)
+        menuInflater.inflate(R.menu.lista_automotivos, menu)
+
         return true
     }
 
@@ -85,5 +103,4 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
-
 }

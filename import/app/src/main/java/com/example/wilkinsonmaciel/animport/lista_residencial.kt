@@ -1,6 +1,5 @@
 package com.example.wilkinsonmaciel.animport
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -9,16 +8,20 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_main2.*
-import kotlinx.android.synthetic.main.app_bar_main2.*
-import kotlinx.android.synthetic.main.content_main2.*
+import kotlinx.android.synthetic.main.activity_lista_residencial.*
+import kotlinx.android.synthetic.main.app_bar_lista_residencial.*
 
-class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class lista_residencial : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_lista_residencial)
         setSupportActionBar(toolbar)
+
+        fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show()
+        }
 
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -27,12 +30,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         nav_view.setNavigationItemSelectedListener(this)
 
-        automotivo.setOnClickListener{
-            startActivity( Intent( this ,lista_automotivos::class.java) )
-        }
-        residencial.setOnClickListener{
-            startActivity( Intent( this ,lista_residencial::class.java) )
-        }
+
     }
 
     override fun onBackPressed() {
@@ -45,7 +43,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main2, menu)
+        menuInflater.inflate(R.menu.lista_residencial, menu)
         return true
     }
 
@@ -85,5 +83,4 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
-
 }

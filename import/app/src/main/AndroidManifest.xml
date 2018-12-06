@@ -19,6 +19,14 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lista_automotivos"
+            android:label="@string/title_activity_lista_automotivos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lista_residencial"
+            android:label="@string/title_activity_lista_residencial"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

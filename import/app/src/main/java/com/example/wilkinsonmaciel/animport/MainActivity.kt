@@ -11,8 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        butao.setOnClickListener{
+        entrar.setOnClickListener{
             startActivity( Intent( this ,Main2Activity::class.java) )
         }
+
     }
 }
