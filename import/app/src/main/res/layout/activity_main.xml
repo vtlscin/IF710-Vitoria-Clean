@@ -6,15 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Digi!"
-         />
+
 
     <Button
         android:id="@+id/butao"
         android:layout_width="289dp"
         android:layout_height="48dp"
-        android:text="@string/entrar" />
+        android:text="@string/entrar"
+        />
+
+
 </android.support.constraint.ConstraintLayout>
