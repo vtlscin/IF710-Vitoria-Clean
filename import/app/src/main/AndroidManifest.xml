@@ -31,7 +31,8 @@
         <activity
             android:name=".calendario"
             android:label="@string/title_activity_calendario"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".sobre"></activity>
     </application>
 
 </manifest>

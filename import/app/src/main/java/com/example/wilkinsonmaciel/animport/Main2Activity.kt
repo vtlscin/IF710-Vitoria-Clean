@@ -12,6 +12,7 @@ import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.app_bar_main2.*
 import kotlinx.android.synthetic.main.content_main2.*
+import org.jetbrains.anko.toast
 
 class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -63,7 +64,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.carrinho -> {
-                // Handle the camera action
+
             }
             R.id.alterar -> {
 
@@ -72,10 +73,10 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
             }
             R.id.sobre -> {
-
+                startActivity( Intent( this ,sobre::class.java) )
             }
-            R.id.sair -> {
-
+            R.id.sair-> {
+                    finish()
             }
         }
 
@@ -83,4 +84,8 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         return true
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        toast("Obrigado por usar o nosso app")
+    }
 }

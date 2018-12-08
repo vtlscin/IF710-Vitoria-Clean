@@ -1,5 +1,6 @@
 package com.example.wilkinsonmaciel.animport
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -29,9 +30,8 @@ class lista_residencial : AppCompatActivity(), NavigationView.OnNavigationItemSe
         setContentView(R.layout.activity_lista_residencial)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        fab.setOnClickListener {
+            startActivity( Intent( this ,calendario::class.java))
         }
 
         val toggle = ActionBarDrawerToggle(

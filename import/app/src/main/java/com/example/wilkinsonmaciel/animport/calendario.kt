@@ -1,5 +1,6 @@
 package com.example.wilkinsonmaciel.animport
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -8,8 +9,12 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.CalendarView
+import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.activity_calendario.*
 import kotlinx.android.synthetic.main.app_bar_calendario.*
+import kotlinx.android.synthetic.main.content_calendario.*
+import org.jetbrains.anko.sdk25.coroutines.onDateChange
 
 class calendario : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -18,9 +23,8 @@ class calendario : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
         setContentView(R.layout.activity_calendario)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        fab.setOnClickListener {
+
         }
 
         val toggle = ActionBarDrawerToggle(
@@ -29,6 +33,15 @@ class calendario : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        calendarView.setOnDateChangeListener{ calendarView: CalendarView, i: Int, i1: Int, i2: Int ->
+                var date = i2.toString() + " / " + i1.toString() + " / " + i.toString()
+                textView5.text = date
+        }
+
+
+
+
 
 
     }
