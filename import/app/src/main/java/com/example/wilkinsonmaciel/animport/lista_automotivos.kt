@@ -16,11 +16,14 @@ import kotlinx.android.synthetic.main.content_lista_automotivos.*
 class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     val itemList: MutableList<item_automotivo> = mutableListOf(
-            item_automotivo("Adérito Tibiriçá", "atibirica@email.com", "1111-1111"),
-            item_automotivo("Cleiton Siqueira ", "csiqueira@email.com", "2222-2222"),
-            item_automotivo("Carlos Proença", "cproenca@email.com", "3333-3333"),
-            item_automotivo("Filipe Valadão", "fvaladao@email.om", "4444-4444"),
-            item_automotivo("Flávio Noite", "fnoite@email.com", "5555-5555")
+            item_automotivo("Limpeza de Bancos de Couro", "39,00", "Quero"),
+            item_automotivo("Polimento Técnico", "39,00", "Quero"),
+            item_automotivo("Restauração dos Para Brisas", "39,00", "Quero"),
+            item_automotivo("Limpeza dos Plásticos Internos", "49,99", "Quero"),
+            item_automotivo("Vitrificação de Pintura", "49,99", "Quero"),
+            item_automotivo("Revitalização de Faróis", "49,99", "Quero"),
+            item_automotivo("Limpeza detalhada do motor a seco", "49,99", "Quero")
+
     )
 
     lateinit var item_automotivoAdapter: item_automotivoAdapter

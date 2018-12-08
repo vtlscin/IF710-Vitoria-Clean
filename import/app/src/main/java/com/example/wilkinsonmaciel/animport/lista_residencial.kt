@@ -16,16 +16,9 @@ import kotlinx.android.synthetic.main.content_lista_residencial.*
 class lista_residencial : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     val itemList: MutableList<item_residencial> = mutableListOf(
-            item_residencial("Adérito Tibiriçá", "atibirica@email.com", "1111-1111"),
-            item_residencial("Cleiton Siqueira ", "csiqueira@email.com", "2222-2222"),
-            item_residencial("Carlos Proença", "cproenca@email.com", "3333-3333"),
-            item_residencial("Filipe Valadão", "fvaladao@email.om", "4444-4444"),
-            item_residencial("Flávio Noite", "fnoite@email.com", "5555-5555"),
-            item_residencial("Gisela Siebra", "gsiebra@email.com", "6666-6666"),
-            item_residencial("Marco Lousã", "mlousa@email.com", "7777-7777"),
-            item_residencial("Miriam Tabosa", "mtabosa@email.com", "8888-8888"),
-            item_residencial("Rufus Ramírez", "rramirez@email.com", "9999-9999"),
-            item_residencial("Socorro Cabreira", "scabreira@email.com", "1010-1010")
+            item_residencial("Limpeza de Cama", "49,99", "Quero"),
+            item_residencial("Limpeza de Estofados", "59,99", "Quero"),
+            item_residencial("Limpeza de Tapetes", "49,99", "Quero")
     )
 
     lateinit var item_residencialAdapter: item_residencialAdapter
