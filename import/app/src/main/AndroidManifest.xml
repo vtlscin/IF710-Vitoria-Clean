@@ -27,6 +27,10 @@
         <activity
             android:name=".lista_residencial"
             android:label="@string/title_activity_lista_residencial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".calendario"
+            android:label="@string/title_activity_calendario"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

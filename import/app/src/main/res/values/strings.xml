@@ -10,4 +10,5 @@
     <string name="entrar">entrar</string>
     <string name="title_activity_lista_automotivos">Vitoria Clean</string>
     <string name="title_activity_lista_residencial">Vitoria Clean</string>
+    <string name="title_activity_calendario">calendario</string>
 </resources>

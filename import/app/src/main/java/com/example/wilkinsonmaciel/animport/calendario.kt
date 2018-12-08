@@ -1,42 +1,26 @@
 package com.example.wilkinsonmaciel.animport
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_lista_automotivos.*
-import kotlinx.android.synthetic.main.app_bar_lista_automotivos.*
-import kotlinx.android.synthetic.main.content_lista_automotivos.*
+import kotlinx.android.synthetic.main.activity_calendario.*
+import kotlinx.android.synthetic.main.app_bar_calendario.*
 
-class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
-    val itemList: MutableList<item_automotivo> = mutableListOf(
-            item_automotivo("Limpeza de Bancos de Couro", "39,00", "Quero"),
-            item_automotivo("Polimento Técnico", "39,00", "Quero"),
-            item_automotivo("Restauração dos Para Brisas", "39,00", "Quero"),
-            item_automotivo("Limpeza dos Plásticos Internos", "49,99", "Quero"),
-            item_automotivo("Vitrificação de Pintura", "49,99", "Quero"),
-            item_automotivo("Revitalização de Faróis", "49,99", "Quero"),
-            item_automotivo("Limpeza detalhada do motor a seco", "49,99", "Quero")
-
-    )
-
-    lateinit var item_automotivoAdapter: item_automotivoAdapter
-
+class calendario : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista_automotivos)
+        setContentView(R.layout.activity_calendario)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener {
-            startActivity( Intent( this ,calendario::class.java) )
+        fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show()
         }
 
         val toggle = ActionBarDrawerToggle(
@@ -45,12 +29,6 @@ class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSe
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
-
-        item_automotivoAdapter = item_automotivoAdapter(this, itemList)
-        recyclerView.adapter = item_automotivoAdapter
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.smoothScrollToPosition(itemList.size)
-
 
 
     }
@@ -65,8 +43,7 @@ class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.lista_automotivos, menu)
-
+        menuInflater.inflate(R.menu.calendario, menu)
         return true
     }
 
@@ -83,19 +60,22 @@ class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSe
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.carrinho -> {
+            R.id.nav_camera -> {
                 // Handle the camera action
             }
-            R.id.alterar -> {
+            R.id.nav_gallery -> {
 
             }
-            R.id.compras -> {
+            R.id.nav_slideshow -> {
 
             }
-            R.id.sobre -> {
+            R.id.nav_manage -> {
 
             }
-            R.id.sair -> {
+            R.id.nav_share -> {
+
+            }
+            R.id.nav_send -> {
 
             }
         }
