@@ -83,9 +83,5 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        toast("Obrigado por usar o nosso app")
-    }
+    
 }
