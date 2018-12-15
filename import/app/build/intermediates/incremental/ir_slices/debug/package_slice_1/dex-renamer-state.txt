@@ -1,4 +1,0 @@
-#Fri Dec 07 11:56:08 GMT-03:00 2018
-base.0=D\:\\Users\\vtls\\Downloads\\IF710-Vitoria-Clean-master\\IF710-Vitoria-Clean-master\\import\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
-path.0=classes.dex
-renamed.0=classes.dex
