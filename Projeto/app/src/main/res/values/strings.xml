@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Vitoria Clean</string>
+    <string name="title_activity_main2">Vitoria Clean</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="entrar">entrar</string>
+    <string name="title_activity_lista_automotivos">Vitoria Clean</string>
+    <string name="title_activity_lista_residencial">Vitoria Clean</string>
+    <string name="title_activity_calendario">Vitoria Clean</string>
+    <string name="sobre">A vitória clean é especializada em  lavagem inteligente de estofados domésticos e automotivos dentre eles: sofá, tapete, persianas, colchão etc.
+
+Organização: Wilson Ferreira
+Telefone: (81) 98640-6715
+E-mail: ferreirawilson73@gmail.com
+</string>
+</resources>

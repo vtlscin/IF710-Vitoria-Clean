@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Main2Activity"
+    tools:showIn="@layout/app_bar_main2">
+
+    <Button
+        android:id="@+id/automotivo"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="229dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="177dp"
+        android:background="@drawable/botaoarredondado"
+        android:text="automotivo"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/residencial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/residencial"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="229dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="164dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/botaoarredondado"
+        android:text="residencial"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/automotivo"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="76dp"
+        android:text="Escolha o tipo de serviço desejado:"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/automotivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="@+id/automotivo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+</android.support.constraint.ConstraintLayout>
