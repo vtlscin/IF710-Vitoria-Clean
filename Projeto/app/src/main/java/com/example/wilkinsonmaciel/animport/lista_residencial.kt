@@ -17,11 +17,13 @@ import kotlinx.android.synthetic.main.content_lista_residencial.*
 import org.jetbrains.anko.toast
 
 class lista_residencial : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
+    companion object {
+        var total1 = "0"
+    }
     val itemList: MutableList<item_residencial> = mutableListOf(
-            item_residencial("Limpeza de Cama", "50.00", "Quero"),
-            item_residencial("Limpeza de Estofados", "60.00", "Quero"),
-            item_residencial("Limpeza de Tapetes", "50.00", "Quero")
+            item_residencial("Limpeza de Cama", "50.00", "Comprar"),
+            item_residencial("Limpeza de Estofados", "60.00", "Comprar"),
+            item_residencial("Limpeza de Tapetes", "50.00", "Comprar")
     )
 
     internal lateinit var item_residencialAdapter: item_residencialAdapter
@@ -33,12 +35,12 @@ class lista_residencial : AppCompatActivity(), NavigationView.OnNavigationItemSe
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener {
-            var total = "0"
+            //var total = "0"
 
             for(i in item_residencialAdapter.checkeditem){
-                total +=   "+" + i.preço
+                total1 +=   "+" + i.preço
             }
-            var total2 = eval(total)
+            var total2 = eval(total1)
             textView7.setText(total2.toString())
             toast("Processando Compra...")
             //

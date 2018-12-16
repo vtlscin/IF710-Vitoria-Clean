@@ -19,6 +19,9 @@ import org.jetbrains.anko.toast
 
 class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    companion object {
+        var total = "0"
+    }
     val itemList: MutableList<item_automotivo> = mutableListOf(
             item_automotivo("Limpeza de Bancos de Couro", "39.00", "Quero"),
             item_automotivo("Polimento Técnico", "39.00", "Quero"),
@@ -41,7 +44,7 @@ class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSe
         fab.setOnClickListener {
 
             var i = 0
-            var total = "0"
+            //var total = "0"
 
            for(i in item_automotivoAdapter.checkeditem){
                total +=   "+" + i.preço

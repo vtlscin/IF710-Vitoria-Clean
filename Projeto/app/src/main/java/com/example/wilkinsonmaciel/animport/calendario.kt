@@ -19,6 +19,9 @@ import org.jetbrains.anko.toast
 
 class calendario : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    companion object {
+         var date = ""
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendario)
