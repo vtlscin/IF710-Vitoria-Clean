@@ -18,7 +18,8 @@ import org.jetbrains.anko.toast
 
 class lista_residencial : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     companion object {
-        var total1 = "0"
+        var total2 = 0.0
+        var checagem = true
     }
     val itemList: MutableList<item_residencial> = mutableListOf(
             item_residencial("Limpeza de Cama", "50.00", "Comprar"),
@@ -35,13 +36,14 @@ class lista_residencial : AppCompatActivity(), NavigationView.OnNavigationItemSe
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener {
-            //var total = "0"
+            var total1 = "0"
 
             for(i in item_residencialAdapter.checkeditem){
                 total1 +=   "+" + i.preço
             }
-            var total2 = eval(total1)
+            total2 = eval(total1)
             textView7.setText(total2.toString())
+            checagem = true
             toast("Processando Compra..")
             Handler().postDelayed({
                 startActivity( Intent( this ,calendario::class.java) )

@@ -12,6 +12,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.wilkinsonmaciel.animport.lista_residencial.Companion.checagem
 import kotlinx.android.synthetic.main.activity_lista_automotivos.*
 import kotlinx.android.synthetic.main.app_bar_lista_automotivos.*
 import kotlinx.android.synthetic.main.content_lista_automotivos.*
@@ -20,7 +21,8 @@ import org.jetbrains.anko.toast
 class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     companion object {
-        var total = "0"
+        var total = 0.0
+
     }
     val itemList: MutableList<item_automotivo> = mutableListOf(
             item_automotivo("Limpeza de Bancos de Couro", "39.00", "Quero"),
@@ -43,14 +45,14 @@ class lista_automotivos : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
         fab.setOnClickListener {
 
-            var i = 0
-            //var total = "0"
+            var total1 = "0"
 
            for(i in item_automotivoAdapter.checkeditem){
-               total +=   "+" + i.preço
+               total1 +=   "+" + i.preço
            }
-             var total2 = eval(total)
-            textView6.setText(total2.toString())
+            total = eval(total1)
+            textView6.setText(total.toString())
+            checagem = false
             toast("Processando Compra..")
             Handler().postDelayed({
                 startActivity( Intent( this ,calendario::class.java) )

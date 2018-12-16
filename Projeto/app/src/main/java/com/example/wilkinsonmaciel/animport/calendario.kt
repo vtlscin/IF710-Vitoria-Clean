@@ -44,7 +44,7 @@ class calendario : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
 
         calendarView.setOnDateChangeListener{ calendarView: CalendarView, i: Int, i1: Int, i2: Int ->
                 var mes = i1+1
-                var date = i2.toString() + " / " + mes.toString() + " / " + i.toString()
+                date = i2.toString() + " / " + mes.toString() + " / " + i.toString()
                 textView5.text = date
         }
 
