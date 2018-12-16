@@ -23,8 +23,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="11dp"
-        android:layout_marginTop="97dp"
+        android:layout_marginTop="64dp"
         android:text="Em Breve Entraremos em Contato"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,13 +32,14 @@
         android:id="@+id/textView12"
         android:layout_width="207dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="215dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="148dp"
         android:text="Informações da Compra:"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
         android:id="@+id/textView13"
@@ -56,7 +56,7 @@
         android:id="@+id/textView14"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="64dp"
         android:layout_marginEnd="194dp"
         android:text="0"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
@@ -67,14 +67,17 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="176dp"
+        android:layout_marginBottom="132dp"
         android:layout_marginEnd="39dp"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
         android:text="Data"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView13"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="@+id/textView12" />
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.742" />
 
     <TextView
         android:id="@+id/textView16"
@@ -89,10 +92,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="59dp"
-        android:layout_marginStart="123dp"
+        android:layout_marginStart="144dp"
         android:background="@drawable/botaoarredondado"
         android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0" />
+
+
 </android.support.constraint.ConstraintLayout>
