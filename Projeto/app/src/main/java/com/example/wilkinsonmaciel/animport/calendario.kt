@@ -29,6 +29,7 @@ class calendario : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener {
+            toast("Processando...")
             Handler().postDelayed({
                 startActivity( Intent( this , checkout::class.java) )
             }, 2000)
