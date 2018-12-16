@@ -713,17 +713,17 @@ public final class R {
         public static final int abc_search_dropdown_item_icons_2line = 0x7f0a0017;
         public static final int abc_search_view = 0x7f0a0018;
         public static final int abc_select_dialog_material = 0x7f0a0019;
-        public static final int notification_action = 0x7f0a003c;
-        public static final int notification_action_tombstone = 0x7f0a003d;
-        public static final int notification_template_custom_big = 0x7f0a0044;
-        public static final int notification_template_icon_group = 0x7f0a0045;
-        public static final int notification_template_part_chronometer = 0x7f0a0049;
-        public static final int notification_template_part_time = 0x7f0a004a;
-        public static final int select_dialog_item_material = 0x7f0a004b;
-        public static final int select_dialog_multichoice_material = 0x7f0a004c;
-        public static final int select_dialog_singlechoice_material = 0x7f0a004d;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0a004e;
-        public static final int tooltip = 0x7f0a004f;
+        public static final int notification_action = 0x7f0a003d;
+        public static final int notification_action_tombstone = 0x7f0a003e;
+        public static final int notification_template_custom_big = 0x7f0a0045;
+        public static final int notification_template_icon_group = 0x7f0a0046;
+        public static final int notification_template_part_chronometer = 0x7f0a004a;
+        public static final int notification_template_part_time = 0x7f0a004b;
+        public static final int select_dialog_item_material = 0x7f0a004c;
+        public static final int select_dialog_multichoice_material = 0x7f0a004d;
+        public static final int select_dialog_singlechoice_material = 0x7f0a004e;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0a004f;
+        public static final int tooltip = 0x7f0a0050;
     }
     public static final class string {
         public static final int abc_action_bar_home_description = 0x7f0d0000;

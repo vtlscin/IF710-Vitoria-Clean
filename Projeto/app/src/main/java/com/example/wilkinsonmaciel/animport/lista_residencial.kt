@@ -42,8 +42,10 @@ class lista_residencial : AppCompatActivity(), NavigationView.OnNavigationItemSe
             }
             var total2 = eval(total1)
             textView7.setText(total2.toString())
-            toast("Processando Compra...")
-            //
+            Handler().postDelayed({
+                startActivity( Intent( this ,calendario::class.java) )
+            }, 2000)
+
         }
 
         val toggle = ActionBarDrawerToggle(

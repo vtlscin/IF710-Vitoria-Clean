@@ -2,6 +2,7 @@ package com.example.wilkinsonmaciel.animport
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
@@ -28,7 +29,9 @@ class calendario : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener {
-
+            Handler().postDelayed({
+                startActivity( Intent( this , checkout::class.java) )
+            }, 2000)
         }
 
         val toggle = ActionBarDrawerToggle(

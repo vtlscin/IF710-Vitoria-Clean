@@ -32,7 +32,8 @@
             android:name=".calendario"
             android:label="@string/title_activity_calendario"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".sobre"></activity>
+        <activity android:name=".sobre" />
+        <activity android:name=".checkout"></activity>
     </application>
 
 </manifest>
